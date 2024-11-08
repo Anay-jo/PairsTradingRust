@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 
 fmp = "0.2"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = {version = "1.17", features = ["full"]}
