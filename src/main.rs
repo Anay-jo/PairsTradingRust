@@ -126,7 +126,7 @@ async fn round_to_places(num: f64, places: u32) -> f64 {
 async fn init_data(ticker: &str) -> Vec<FMPHistoricalPrice> {
     let data = Client::new(
         "https://financialmodelingprep.com/api",
-        "0mIYdxrV89xwrkb99a8zdcElTiQu44sn"
+        ""
     );
     let res: Result<Vec<FMPHistoricalPrice>, StatusCode> = data.historical_prices(ticker).await;
     let vec: Vec<FMPHistoricalPrice> = res.unwrap();
